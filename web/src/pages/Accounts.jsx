@@ -1,8 +1,9 @@
 import Board from "../components/Board";
 import Transactions from "../components/Transactions";
+import Login from "./Login";
 
 const Accounts = () => {
-  return (
+  return window.localStorage.getItem("loggedin") ? (
     <div className="accounts-parent">
       <Board
         accType="CURRENT ACCOUNTS"
@@ -13,6 +14,8 @@ const Accounts = () => {
       />
       <Transactions />
     </div>
+  ) : (
+    <Login />
   );
 };
 
