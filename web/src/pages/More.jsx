@@ -2,7 +2,7 @@ import Lock from "../assets/lock-2.png";
 
 const More = () => {
   const logout = () => {
-    sessionStorage.removeItem("loggedin");
+    localStorage.removeItem("loggedin");
     window.location.href = "/login";
   };
   return (

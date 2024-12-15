@@ -14,7 +14,7 @@ const Login = () => {
     if (userId !== "jb" && userPassword !== "jb") {
       setError("Login information is incorrect, please check and try again");
     } else {
-      sessionStorage.setItem("loggedin", true);
+      localStorage.setItem("loggedin", "true");
       window.location = "/";
     }
   };
