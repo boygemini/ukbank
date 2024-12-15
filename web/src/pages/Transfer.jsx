@@ -1,9 +1,8 @@
 import Board from "../components/Board";
-import Login from "./Login";
 
 const Transfer = () => {
   return (
-     window.localStorage.getItem("loggedin") ? <div className="major-container">
+    <div className="major-container">
       <Board
         accType={"FROM"}
         detail={"73848992 | 16-99-20"}
@@ -21,7 +20,7 @@ const Transfer = () => {
           eos porro sed esse et aspernatur maiores quis quod impedit ea.
         </p>
       </div>
-    </div> : <Login />
+    </div>
   );
 };
 

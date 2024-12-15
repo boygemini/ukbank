@@ -1,12 +1,11 @@
 import Lock from "../assets/lock-2.png";
-import Login from "./Login";
 
 const More = () => {
   const logout = () => {
-    localStorage.removeItem("loggedin");
+    sessionStorage.removeItem("loggedin");
     window.location.href = "/login";
   };
-  return window.localStorage.getItem("loggedin") ? (
+  return (
     <div className="major-container">
       <div className="card-container">
         <img src={Lock} alt="" />
@@ -16,8 +15,6 @@ const More = () => {
         </button>
       </div>
     </div>
-  ) : (
-    <Login />
   );
 };
 

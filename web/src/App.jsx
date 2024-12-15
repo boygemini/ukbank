@@ -9,8 +9,18 @@ import Login from "./pages/Login";
 import Cards from "./pages/Cards";
 import More from "./pages/More";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    if (window.location.href.includes("login")) {
+      console.log("logged out");
+    } else {
+      localStorage.getItem("loggedin")
+        ? console.log("logged in")
+        : (window.location.href = "/login");
+    }
+  }, []);
   return (
     <div className="body">
       <ErrorBoundary>
