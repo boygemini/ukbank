@@ -11,7 +11,7 @@ import More from "./pages/More";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
-  return window.sessionStorage.getItem("loggedin") ? (
+  return window.sessionStorage.getItem("loggedin") === true ? (
     <div className="body">
       <ErrorBoundary>
         <Banner />
@@ -29,10 +29,7 @@ function App() {
   ) : (
     <ErrorBoundary>
       <Banner />
-      <Routes>
-        <Route path="/login" element={<Login />} />
-      </Routes>
-      <Menu />
+      <Login />
     </ErrorBoundary>
   );
 }
