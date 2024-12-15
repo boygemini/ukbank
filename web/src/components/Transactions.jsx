@@ -96,7 +96,7 @@ const Transactions = () => {
           </div>
         </div> */}
         <div className="no-trans">
-          <p>No transactions to show aj t this time.</p>
+          <p>No transactions to show at this time.</p>
         </div>
       </div>
     </>

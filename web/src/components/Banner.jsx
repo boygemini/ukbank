@@ -13,7 +13,7 @@ const Banner = () => {
         </svg>
       </button>
       <div className="lg">
-        <img className="logo" src={logo } />
+        <img className="logo in-logo" src={logo } />
       </div>
       <div className="menu">
         <button className="close">

@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 const Menu = () => {
   return (
-    <footer>
+    <footer className={window.location.href.includes("login")? "none" : ""}>
       <Link to="/">
         <div className="bottom-btn">
           <img className="btm-icon" src={bank} alt="" srcSet="" />

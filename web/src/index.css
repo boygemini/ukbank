@@ -20,14 +20,24 @@
   text-decoration: none;
 }
 
+/* Hide scrollbars for all elements */
+* {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+/* Hide scrollbars for WebKit browsers (Chrome, Safari, etc.) */
+*::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   min-width: 100vw;
-  min-height: 100vh;
-  max-height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: beige;
 }
 
 .card-container {
@@ -45,7 +55,7 @@ html {
   width: 50px;
 }
 
-.card-container p{
+.card-container p {
   width: calc(100% - 2rem);
 }
 
@@ -182,6 +192,11 @@ nav {
   justify-self: center;
 }
 
+.in-logo{
+   height: 130px !important;
+   height: 200px !important;
+}
+
 .accounts-parent {
   /* padding: 15px; */
   width: 100%;
@@ -241,11 +256,11 @@ nav {
 }
 
 .details {
-  padding: 2rem 0.5rem 1rem 0.5rem;
+  padding: 2rem 1.3rem 1rem 1.3rem;
 }
 
 .card-div {
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   height: 200px;
   border: 2px dashed slategray;
   border-radius: 20px;
@@ -277,6 +292,7 @@ nav {
   width: 90%;
   transform: translateY(-4px);
 }
+
 footer {
   color: white;
   margin: 40px 0px 0px 0px;
@@ -631,11 +647,11 @@ footer {
   padding: 0.2rem 0.4rem;
 }
 
-.month h3{
+.month h3 {
   font-weight: 500;
 }
 
-.no-trans{
+.no-trans {
   padding: 1rem;
 }
 
