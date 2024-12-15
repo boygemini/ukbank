@@ -37,7 +37,11 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: beige;
+  background-color: #434343;
+}
+
+body{
+  background-color: white;
 }
 
 .card-container {
