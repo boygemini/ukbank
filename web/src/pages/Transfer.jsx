@@ -15,10 +15,7 @@ const Transfer = () => {
       <Board accType="" detail="REFERENCE" name="Allowance" />
       <div className="details">
         <h2>Sending money</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          eos porro sed esse et aspernatur maiores quis quod impedit ea.
-        </p>
+        <p>There's an issue with your account, please contact us.</p>
       </div>
     </div>
   );
