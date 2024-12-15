@@ -11,7 +11,7 @@ import More from "./pages/More";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
-  return window.localStorage.getItem("loggedin") === "true" ? (
+  return window.localStorage.getItem("loggedin") ? (
     <div className="body">
       <ErrorBoundary>
         <Banner />
