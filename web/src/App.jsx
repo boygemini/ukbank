@@ -29,7 +29,13 @@ function App() {
   ) : (
     <ErrorBoundary>
       <Banner />
-      <Login />
+      {window.location.href.includes("/login") ? (
+        <Routes>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      ) : (
+        <Login />
+      )}
     </ErrorBoundary>
   );
 }
