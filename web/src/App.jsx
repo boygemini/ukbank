@@ -1,0 +1,30 @@
+import {Routes, Route } from "react-router-dom";
+import "./App.css";
+import Banner from "./components/Banner";
+import Menu from "./components/Menu";
+import NotFound from "./pages/NotFound";
+import Accounts from "./pages/Accounts";
+import Transfer from "./pages/Transfer";
+import Cards from "./pages/Cards";
+import More from "./pages/More";
+import ErrorBoundary from "./components/ErrorBoundary";
+
+function App() {
+  return (
+    <div className="body">
+      <ErrorBoundary>
+        <Banner />
+        <Routes>
+          <Route path="/" element={<Accounts />} />
+          <Route path="/transfer" element={<Transfer />} />
+          <Route path="/cards" element={<Cards />} />
+          <Route path="/more" element={<More />} />
+          <Route path="*" element={<NotFound />} />{" "}
+        </Routes>
+        <Menu />
+      </ErrorBoundary>
+    </div>
+  );
+}
+
+export default App;
