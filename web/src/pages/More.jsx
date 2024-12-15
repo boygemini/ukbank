@@ -8,6 +8,7 @@ const More = () => {
   const handleLogout = () => {
     logout();
     navigate("/");
+    window.location.reload()
   };
   return (
     <div className="major-container">

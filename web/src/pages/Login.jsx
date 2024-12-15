@@ -18,8 +18,9 @@ const Login = () => {
     if (userId !== "jb" && userPassword !== "jb") {
       setError("Login information is incorrect, please check and try again");
     } else {
-      login()
+      login();
       navigate("/");
+      window.location.reload();
     }
   };
 

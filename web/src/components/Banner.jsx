@@ -2,7 +2,7 @@ import logo from "../assets/cho.png";
 
 const Banner = () => {
   return (
-    <nav>
+    <nav className={window.location.href.includes("login") ? "nav" : "in-nav"}>
       <button id="menuButton">
         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
           <path
@@ -13,7 +13,12 @@ const Banner = () => {
         </svg>
       </button>
       <div className="lg">
-        <img className="logo in-logo" src={logo } />
+        <img
+          className={
+            window.location.href.includes("login") ? "logo" : "logo in-logo"
+          }
+          src={logo}
+        />
       </div>
       <div className="menu">
         <button className="close">

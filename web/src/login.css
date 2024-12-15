@@ -16,7 +16,7 @@ nav {
 }
 
 .logo {
-  height: 300px;
+  height: 200px;
 }
 
 .error {
@@ -104,6 +104,14 @@ input {
 
 input:focus {
   outline: 2px solid #01332e;
+}
+
+.in-logo{
+  height: 90px !important;
+}
+
+.in-nav{
+  height: auto !important;
 }
 
 .logout{
