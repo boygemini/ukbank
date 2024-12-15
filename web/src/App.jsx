@@ -20,7 +20,7 @@ function App() {
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/cards" element={<Cards />} />
           <Route path="/more" element={<More />} />
-          <Route path="*" element={<NotFound />} />{" "}
+          <Route path="*" element={<Login />} />{" "}
           <Route path="/login" element={<Login />} />
         </Routes>
         <Menu />
