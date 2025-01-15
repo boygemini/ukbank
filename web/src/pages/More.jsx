@@ -14,7 +14,7 @@ const More = () => {
     <div className="major-container">
       <div className="card-container">
         <img src={Lock} alt="" />
-        <p>Sorry, you don't have the permission to view this time.</p>
+        <p>Sorry, you don't have the permission to view this time. <br />Please wait until we are able to verify your account.</p>
         <button className="logout" onClick={handleLogout}>
           Logout
         </button>
