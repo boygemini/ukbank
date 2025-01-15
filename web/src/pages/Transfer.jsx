@@ -15,7 +15,7 @@ const Transfer = () => {
       <Board accType="" detail="REFERENCE" name="Allowance" />
       <div className="details">
         <h2>Sending money</h2>
-        <p>There's an issue with your account, please contact us.</p>
+        <p className="pending">Verification in progress</p>
       </div>
     </div>
   );
