@@ -36,7 +36,11 @@ const Transfer = () => {
         amount={"£457,728.37"}
         av={"457,728.37"}
       />
-      <Board accType="TO" name="ALON PALMER" amount={""} />
+      <Board
+        accType={"TO"}
+        detail={"20518689 | 20-29-24"}
+        name={"ALON PALMER"}
+      />
 
       <div className="form-group acc-details">
         <h1>AMOUNT</h1>
