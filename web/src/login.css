@@ -70,6 +70,10 @@ nav {
   row-gap: 1rem;
 }
 
+.form-group h1{
+  color: #01332e;
+}
+
 label {
   font-size: 13px;
   font-weight: 600;

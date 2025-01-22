@@ -8,6 +8,7 @@ import Transfer from "./pages/Transfer";
 import Login from "./pages/Login";
 import Cards from "./pages/Cards";
 import More from "./pages/More";
+import Pin from "./pages/Pin";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { AuthProvider } from "./components/AuthContext"; // Path to your AuthContext
 import ProtectedRoute from "./components/ProtectedRoute"; // Path to ProtectedRoute
@@ -51,6 +52,15 @@ function App() {
               element={
                 <ProtectedRoute>
                   <More />
+                  <Menu />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/pin"
+              element={
+                <ProtectedRoute>
+                  <Pin />
                   <Menu />
                 </ProtectedRoute>
               }
